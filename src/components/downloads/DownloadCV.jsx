@@ -1,10 +1,11 @@
 import { FaDownload } from "react-icons/fa";
+import cv from "../assets/images/Gor_Mkhitatryan_CV";
 
 const DownloadCV = () => {
     return (
       <section id="download-cv" className="section">
         <a 
-          href="src/assets/images/Gor Mkhitaryan.pdf" 
+          href={cv}
           download="Gor_Mkhitatryan_CV"  
           className="download-btn"
         >
