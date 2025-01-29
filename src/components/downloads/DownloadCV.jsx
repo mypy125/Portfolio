@@ -1,5 +1,5 @@
 import { FaDownload } from "react-icons/fa";
-import cv from "../assets/images/Gor_Mkhitatryan_CV";
+import cv from "/images/GorMkhitaryan.pdf";
 
 const DownloadCV = () => {
     return (
