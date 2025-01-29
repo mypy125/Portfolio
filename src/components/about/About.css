@@ -1,0 +1,39 @@
+.section {
+  padding: 60px 0;
+  background-color: #1e1e1e;
+  color: #fff;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #eaeaea;
+  margin-bottom: 30px;
+}
+
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.about-photo {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 4px solid #2a9d8f;
+  border-radius: 8px;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #ddd;
+  max-width: 600px;
+  line-height: 1.6;
+  text-align: left; 
+  margin-left: 20px; 
+}

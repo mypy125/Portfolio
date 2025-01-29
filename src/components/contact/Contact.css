@@ -1,0 +1,47 @@
+.section {
+  padding: 60px 0;
+  background-color: #1e1e1e; 
+  color: #fff;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #eaeaea;
+  margin-bottom: 30px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: #ddd;
+  margin-bottom: 20px;
+}
+
+.contact-icon {
+  font-size: 1.6rem;
+  color: #2a9d8f;
+  margin-right: 15px;
+}
+
+a {
+  color: #2a9d8f;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .contact-item {
+      font-size: 1rem;
+  }
+
+  .contact-icon {
+      font-size: 1.4rem;
+  }
+}

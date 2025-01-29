@@ -1,0 +1,86 @@
+.section {
+  padding: 60px 0;
+  background-color: #1e1e1e;
+  color: #fff;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #eaeaea;
+  margin-bottom: 30px;
+}
+
+.skills-category {
+  display: flex;
+  flex-wrap: wrap; /* Элементы располагаются в несколько строк */
+  margin-bottom: 40px;
+  justify-content: center; /* Центрируем элементы по горизонтали */
+  align-items: center; /* Центрируем элементы по вертикали */
+}
+
+.skills-category h3 {
+  font-size: 1.8rem;
+  color: #2a9d8f;
+  margin-bottom: 20px;
+  width: 100%; /* Чтобы заголовок занимал всю ширину */
+  text-align: center; /* Центрируем заголовок */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap; /* Элементы списка будут переходить на новую строку */
+  justify-content: center; /* Центрируем элементы списка */
+}
+
+li {
+  font-size: 1.2rem;
+  color: #ddd;
+  background-color: #333;
+  margin: 10px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: 2px solid #444;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 180px; /* Минимальная ширина блока */
+  text-align: left;
+}
+
+li svg {
+  margin-right: 10px;
+  font-size: 1.5rem;
+  color: #2a9d8f;
+}
+
+li:hover {
+  background-color: #2a9d8f;
+  color: #fff;
+  border-color: #2a9d8f;
+  box-shadow: 0 4px 10px rgba(42, 157, 143, 0.3);
+}
+
+@media (max-width: 768px) {
+  h2 {
+      font-size: 2rem;
+  }
+
+  h3 {
+      font-size: 1.6rem;
+  }
+
+  li {
+      font-size: 1rem;
+      padding: 10px 15px;
+  }
+
+  .skills-category {
+      justify-content: center; /* Центрируем элементы по центру */
+  }
+}
