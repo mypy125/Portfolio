@@ -2,15 +2,12 @@
 
 
 :root {
-    /*=======Main theme colors=======*/
     --first-color: #0e2431;
     --second-color: #6a59d1;
     --third-color: #777;
 
-    /*=======Hover colors=======*/
     --hover-color: #614fd0;
 
-    /*=======Background colors=======*/
     --body-bg-color: #fefefe;
     --card-bg-color: #fff;
     --modal-bg-color: #fff;
@@ -19,29 +16,23 @@
     --bg-transparent-color-02: rgba(106, 89, 209, 0.1);
     --liner-color: #d7d7d7;
 
-    /*=======Color Filter=======*/
     --color-filter: invert(1);
 
-    /*=======Box shadow=======*/
     --box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
 
-    /*=======Font size=======*/
     --small-font-size: 14px;
     --normal-font-size: 16px;
 
-    /*=======Scroll bar colors=======*/
     --scroll-bar-color: #c5cadf;
     --scroll-thumb-color: #70768a;
     --scroll-thumb-hover-color: #454f6b;
 }
 
 .dark-theme {
-    /*=======Main theme colors=======*/
     --first-color: #fff;
     --second-color: #6a59d1;
     --third-color: #a9afc3;
 
-    /*=======Background colors=======*/
     --body-bg-color: #0e1b31;
     --card-bg-color: #132347;
     --modal-bg-color: #102048;
@@ -49,10 +40,8 @@
     --bg-transparent-color-01: rgba(255, 255, 255, 0.1);
     --liner-color: #454f6b;
 
-    /*=======Color Filter=======*/
     --color-filter: invert(0);
 
-    /*=======Scroll bar colors=======*/
     --scroll-bar-color: #c1ceff;
     --scroll-thumb-color: #282f4e;
     --scroll-thumb-hover-color: #454f6b;
@@ -122,7 +111,6 @@ body {
     padding: 0 15px;
 }
 
-/* Scroll to top button  */
 .scrollToTop {
     position: fixed;
     right: 0px;
@@ -152,7 +140,6 @@ body {
     right: 20px;
 }
 
-/* ======= theme button Light/Dark ======= */
 .them-btn {
     position: fixed;
     z-index: 11;
@@ -180,7 +167,6 @@ body {
     display: block;
 }
 
-/*=======Scroll bar=======*/
 ::-webkit-scrollbar{
     width: 10px;
     background: var(--scroll-bar-color);
@@ -200,7 +186,6 @@ main {
 }
 
 
-/* ======= Header ======= */
 .header {
     position: fixed;
     z-index: 10;
@@ -261,7 +246,6 @@ main {
     display: none;
 }
 
-/*======= Home section =======*/
 .home {
     padding: 80px 0;
     min-height: 100vh;
@@ -355,10 +339,6 @@ main {
     }
 }
 
-
-/* === end Home section === */
-
-/* ======= Styles for all sections======= */
 .section {
     position: relative;
     width: 100%;
@@ -399,7 +379,6 @@ main {
     background: var(--second-color);
 }
 
-/*======= About section =======*/
 
 .about-wrapper {
     display: flex;
@@ -468,9 +447,6 @@ main {
     font-size: var(--small-font-size);
 }
 
-/* === end About section === */
-
-/* ======= Skills section ======= */
 
 .skills .inner-content {
     padding-bottom: 50px;
@@ -651,9 +627,6 @@ main {
     cursor: pointer;
 }
 
-/* === end Skills section === */
-
-/* ======= Services section ======= */
 .services-description {
     font-size: 30px;
     margin-bottom: 50px;
@@ -769,9 +742,6 @@ main {
     margin-top: 15px;
 }
 
-/* === end Services section === */
-
-/* =======  Portfolio section  ======= */
 
 .portfolio-wrapper {
     width: 100%;
@@ -902,9 +872,6 @@ main {
 }
 
 
-/* === end Portfolio section === */
-
-/* ======= Get-in-touch= section ======= */
 .get-in-touch {
     padding: 60px 20px;
 }
@@ -952,9 +919,6 @@ main {
     margin-bottom: 40px;
 }
 
-/* === end Get-in-touct= section === */
-
-/* ======= Our Clients section ======= */
 .our-client-wrapper {
     width: 100%;
 }
@@ -1015,9 +979,6 @@ main {
 }
 
 
-/* === end Our Clients section === */
-
-/* ======= Contact section ======= */
 .contact-wrapper {
     display: flex;
     justify-content: space-between;
@@ -1116,10 +1077,6 @@ main {
     width: 48%;
 }
 
-/* === end Contact section === */
-
-
-/* ======= footer section ======= */
 .footer {
     position: relative;
     width: 100%;
@@ -1187,9 +1144,6 @@ main {
     padding: 0 15px;
 }
 
-/* === end footer section === */
-
-/* ======= Media query max-width 980px ======= */
 
 @media (max-width:1070px) {
     .home-info h1 {
@@ -1405,8 +1359,3 @@ main {
         width: 100%;
     }
 }
-
-
-/* =======  section ======= */
-
-/* === end  section === */

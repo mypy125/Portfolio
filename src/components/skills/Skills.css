@@ -14,27 +14,30 @@ h2 {
 
 .skills-category {
   display: flex;
-  flex-wrap: wrap; /* Элементы располагаются в несколько строк */
+  flex-wrap: wrap; 
   margin-bottom: 40px;
-  justify-content: center; /* Центрируем элементы по горизонтали */
-  align-items: center; /* Центрируем элементы по вертикали */
+  justify-content: center;
+  align-items: center; 
 }
 
 .skills-category h3 {
   font-size: 1.8rem;
-  color: #2a9d8f;
   margin-bottom: 20px;
-  width: 100%; /* Чтобы заголовок занимал всю ширину */
-  text-align: center; /* Центрируем заголовок */
+  width: 100%;
+  text-align: center; 
 }
+
+.green-category h3 { color: #2a9d8f; } 
+.web-tech h3 { color: #ff9f1c; } 
+.tools-tech h3 { color: #00a8e8; } 
 
 ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
   display: flex;
-  flex-wrap: wrap; /* Элементы списка будут переходить на новую строку */
-  justify-content: center; /* Центрируем элементы списка */
+  flex-wrap: wrap; 
+  justify-content: center; 
 }
 
 li {
@@ -49,14 +52,24 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 180px; /* Минимальная ширина блока */
+  min-width: 180px; 
   text-align: left;
 }
+
+.green-category li { border-color: #2a9d8f; }
+.web-tech li { border-color: #ff9f1c; }
+.tools-tech li { border-color: #00a8e8; }
+
+.green-category li svg, .web-tech li svg, .tools-tech li svg {
+  color: inherit;
+}
+
+.os li:nth-child(1) svg { color: #fbc531; } 
+.os li:nth-child(2) svg { color: #0078d7; }
 
 li svg {
   margin-right: 10px;
   font-size: 1.5rem;
-  color: #2a9d8f;
 }
 
 li:hover {
@@ -64,23 +77,13 @@ li:hover {
   color: #fff;
   border-color: #2a9d8f;
   box-shadow: 0 4px 10px rgba(42, 157, 143, 0.3);
+  transform: scale(1.05); 
 }
 
 @media (max-width: 768px) {
-  h2 {
-      font-size: 2rem;
-  }
-
-  h3 {
-      font-size: 1.6rem;
-  }
-
-  li {
-      font-size: 1rem;
-      padding: 10px 15px;
-  }
-
-  .skills-category {
-      justify-content: center; /* Центрируем элементы по центру */
-  }
+  h2 { font-size: 2rem; }
+  h3 { font-size: 1.6rem; }
+  li { font-size: 1rem; padding: 10px 15px; min-width: 150px; }
+  .skills-category { justify-content: center; }
+  ul { justify-content: flex-start; }
 }

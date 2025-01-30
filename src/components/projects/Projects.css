@@ -1,44 +1,54 @@
 .section {
   padding: 60px 0;
-  background-color: #1e1e1e; 
+  background-color: #1e1e1e;
   color: #fff;
   text-align: center;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-h2 {
+h3 {
   font-size: 2.5rem;
   font-weight: 700;
   color: #eaeaea;
   margin-bottom: 30px;
 }
 
-.project {
-  max-width: 600px;
-  width: 100%;
+.project-item {
+  text-align: center;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-  margin: 0 auto;
 }
 
-h3 {
-  font-size: 1.8rem;
+h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #eaeaea;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1rem;
   color: #ddd;
-  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 a {
-  color: #2a9d8f;
+  color: #00a8e8;
   text-decoration: none;
-  font-weight: 700;
-  margin-top: 20px;
+  font-size: 1rem;
+  transition: color 0.3s ease;
 }
 
 a:hover {
-  text-decoration: underline;
+  color: #2a9d8f;
+}
+
+h3 svg {
+  margin-right: 10px;
+  font-size: 2rem;
 }

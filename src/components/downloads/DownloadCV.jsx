@@ -1,4 +1,5 @@
 import { FaDownload } from "react-icons/fa";
+import "./DownloadCV.css";
 import cv from "/images/GorMkhitaryan.pdf";
 
 const DownloadCV = () => {
@@ -6,11 +7,11 @@ const DownloadCV = () => {
       <section id="download-cv" className="section">
         <a 
           href={cv}
-          download="Gor_Mkhitatryan_CV"  
+          download="Gor_Mkhitaryan_CV"  
           className="download-btn"
         >
           <FaDownload className="download-icon" />
-          Download_CV
+          Download CV
         </a>
       </section>
     );

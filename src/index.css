@@ -1,15 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-  /*=======Main theme colors=======*/
   --first-color: #0e2431;
   --second-color: #6a59d1;
   --third-color: #777;
 
-  /*=======Hover colors=======*/
   --hover-color: #614fd0;
 
-  /*=======Background colors=======*/
   --body-bg-color: #fefefe;
   --card-bg-color: #fff;
   --modal-bg-color: #fff;
@@ -18,29 +15,23 @@
   --bg-transparent-color-02: rgba(106, 89, 209, 0.1);
   --liner-color: #d7d7d7;
 
-  /*=======Color Filter=======*/
   --color-filter: invert(1);
 
-  /*=======Box shadow=======*/
   --box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
 
-  /*=======Font size=======*/
   --small-font-size: 14px;
   --normal-font-size: 16px;
 
-  /*=======Scroll bar colors=======*/
   --scroll-bar-color: #c5cadf;
   --scroll-thumb-color: #70768a;
   --scroll-thumb-hover-color: #454f6b;
 }
 
 .dark-theme {
-  /*=======Main theme colors=======*/
   --first-color: #fff;
   --second-color: #6a59d1;
   --third-color: #a9afc3;
 
-  /*=======Background colors=======*/
   --body-bg-color: #0e1b31;
   --card-bg-color: #132347;
   --modal-bg-color: #102048;
@@ -48,10 +39,8 @@
   --bg-transparent-color-01: rgba(255, 255, 255, 0.1);
   --liner-color: #454f6b;
 
-  /*=======Color Filter=======*/
   --color-filter: invert(0);
 
-  /*=======Scroll bar colors=======*/
   --scroll-bar-color: #c1ceff;
   --scroll-thumb-color: #282f4e;
   --scroll-thumb-hover-color: #454f6b;
@@ -125,7 +114,6 @@ body {
   padding: 0 15px;
 }
 
-/* Scroll to top button  */
 .scrollToTop {
   position: fixed;
   right: 0px;
@@ -155,7 +143,6 @@ body {
   right: 20px;
 }
 
-/* ======= theme button Light/Dark ======= */
 .them-btn {
   position: fixed;
   z-index: 11;
@@ -183,7 +170,6 @@ body {
   display: block;
 }
 
-/*=======Scroll bar=======*/
 ::-webkit-scrollbar{
   width: 10px;
   background: var(--scroll-bar-color);
@@ -201,8 +187,6 @@ body {
 main {
   flex: 1;
 }
-
-/* ======= Styles for all sections======= */
 
 .section {
   position: relative;
