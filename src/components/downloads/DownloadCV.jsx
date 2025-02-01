@@ -11,7 +11,7 @@ const DownloadCV = () => {
           className="download-btn"
         >
           <FaDownload className="download-icon" />
-          Download CV
+          Download_CV
         </a>
       </section>
     );
