@@ -6,7 +6,6 @@ const Header = () => {
     <header className="header">
       <div className="container">
         <div className="header-wrapper">
-          {/* <a href="#home" className="logo">Gor Mkhitaryan</a> */}
           <nav className="nav">
             <ul className="nav-menu">
               <li className="nav-item">
