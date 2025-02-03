@@ -6,13 +6,12 @@
 }
 
 .contact-icon {
-  font-size: 2rem; 
+  font-size: 2rem;
   color: #b3b9c7;
   transition: transform 0.3s, color 0.3s;
+  cursor: pointer;
 }
 
 .contact-icon:hover {
-  color: #0077b5;
-  transform: scale(1.2); 
+  transform: scale(1.2);
 }
-
