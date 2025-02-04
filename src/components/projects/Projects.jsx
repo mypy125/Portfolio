@@ -6,7 +6,7 @@ const Projects = () => {
   const projects = [
     {
       title: "Restaurant Ordering Frontend",
-      description: "Built with Spring Boot & React. Integrated payment systems (Stripe, Idram, Easypay).",
+      description: "Built with Spring Boot & React. Integrated payment systems (Idram, Easypay).",
       link: "https://github.com/mypy125/Restaurant.am-frontend",
     },
     {

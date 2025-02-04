@@ -1,6 +1,6 @@
 import { FaAws, FaBriefcase, FaDatabase, FaDocker, FaFlask, FaJava, FaLinux, FaNodeJs, FaReact, FaWindows } from "react-icons/fa";
-import { SiApache, SiApachetomcat, SiAxios, SiFlyway, SiGit, SiGradle, SiHibernate, SiJavascript, SiJenkins, SiJunit5, SiLiquibase, 
-  SiMysql, SiNestjs, SiNetflix, SiNginx, SiPostgresql, SiPostman, SiRabbitmq, SiRedis, SiRedux, SiSpringboot, SiSpringsecurity, SiStripe, SiTypescript
+import { SiApache, SiApachetomcat, SiAxios, SiExpress, SiFlyway, SiGit, SiGradle, SiHibernate, SiJavascript, SiJenkins, SiJunit5, SiLiquibase, 
+  SiMysql, SiNetflix, SiNginx, SiPostgresql, SiPostman, SiRabbitmq, SiRedis, SiRedux, SiSpringboot, SiSpringsecurity, SiStripe, SiTypescript
 } from "react-icons/si";
 import { GiCircuitry } from "react-icons/gi";
 import { FaClipboardCheck } from "react-icons/fa6";
@@ -44,8 +44,9 @@ const Skills = () => {
         { icon: <FaNodeJs />, name: 'Node.js', iconColor: '#68A063' },
         { icon: <FaReact />, name: 'React', iconColor: '#61DAFB' },
         { icon: <SiRedux />, name: 'Redux', iconColor: '#764ABC' },
+        { icon: <SiExpress />, name: 'Express', iconColor: '#E0234E' },
         { icon: <SiAxios />, name: 'Axios', iconColor: '#5A29E4' },
-        { icon: <SiNestjs />, name: 'NestJS', iconColor: '#E0234E' },
+        
       ],
     },
     {
