@@ -1,5 +1,5 @@
 import { FaAws, FaBriefcase, FaDatabase, FaDocker, FaFlask, FaJava, FaLinux, FaNodeJs, FaReact, FaWindows } from "react-icons/fa";
-import { SiApache, SiApachetomcat, SiAxios, SiExpress, SiFlyway, SiGit, SiGradle, SiHibernate, SiJavascript, SiJenkins, SiJunit5, SiLiquibase, 
+import { SiApache, SiApachetomcat, SiAxios, SiExpress, SiFirebase, SiFlyway, SiGit, SiGradle, SiHibernate, SiJavascript, SiJenkins, SiJunit5, SiLiquibase, 
   SiMysql, SiNetflix, SiNginx, SiPostgresql, SiPostman, SiRabbitmq, SiRedis, SiRedux, SiSpringboot, SiSpringsecurity, SiStripe, SiTypescript
 } from "react-icons/si";
 import { GiCircuitry } from "react-icons/gi";
@@ -31,6 +31,7 @@ const Skills = () => {
         { icon: <SiNetflix />, name: 'Netflix, Eureka, Zuul, Hystrix', iconColor: '#E50914' },
         { icon: <SiStripe />, name: 'Stripe, Idram, Easypay', iconColor: '#008CDD' },
         { icon: <SiRabbitmq />, name: 'RabbitMQ', iconColor: '#FF6600' },
+        { icon: <SiFirebase />, name: 'Firebase', iconColor: '#FFCA28' },
         { icon: <SiFlyway />, name: 'Flyway', iconColor: '#CC0200' },
         { icon: <SiLiquibase />, name: 'Liquibase', iconColor: '#2962FF' },
       ],
