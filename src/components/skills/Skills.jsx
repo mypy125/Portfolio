@@ -31,7 +31,7 @@ const Skills = () => {
         { icon: <SiNetflix />, name: 'Netflix, Eureka, Zuul, Hystrix', iconColor: '#E50914' },
         { icon: <SiStripe />, name: 'Stripe, Idram, Easypay', iconColor: '#008CDD' },
         { icon: <SiRabbitmq />, name: 'RabbitMQ', iconColor: '#FF6600' },
-        { icon: <SiFirebase />, name: 'Firebase', iconColor: '#FFCA28' },
+        { icon: <SiFirebase />, name: 'Firebase', iconColor: '#FFCA28' }, 
         { icon: <SiFlyway />, name: 'Flyway', iconColor: '#CC0200' },
         { icon: <SiLiquibase />, name: 'Liquibase', iconColor: '#2962FF' },
       ],
