@@ -29,7 +29,7 @@ const About = () => {
           transition={{ duration: 0.5, delay: 0.4 }}
         >
           <p>
-            Im a Back-End Developer with four years of specialized education in client-server application development. I have extensive experience in creating scalable, secure, and efficient solutions. Passionate about problem-solving, learning new technologies, and contributing to impactful projects.
+            Im a Java Developer with four years of specialized education in client-server application development. I have extensive experience in creating scalable, secure, and efficient solutions. Passionate about problem-solving, learning new technologies, and contributing to impactful projects.
           </p>
           <div className="about-highlights">
             <div className="highlight-item">

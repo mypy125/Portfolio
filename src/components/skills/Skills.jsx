@@ -29,7 +29,7 @@ const Skills = () => {
         { icon: <SiSpringsecurity />, name: 'Spring Security, JWT, OAuth2', iconColor: '#6DB33F' },
         { icon: <SiHibernate />, name: 'Hibernate', iconColor: '#59666C' },
         { icon: <SiNetflix />, name: 'Netflix, Eureka, Zuul, Hystrix', iconColor: '#E50914' },
-        { icon: <SiStripe />, name: 'Stripe, Idram, Easypay', iconColor: '#008CDD' },
+        { icon: <SiStripe />, name: 'Stripe, Paypal, etc. Payment Gateway', iconColor: '#008CDD' },
         { icon: <SiRabbitmq />, name: 'RabbitMQ', iconColor: '#FF6600' },
         { icon: <SiFirebase />, name: 'Firebase', iconColor: '#FFCA28' }, 
         { icon: <SiFlyway />, name: 'Flyway', iconColor: '#CC0200' },
@@ -40,7 +40,7 @@ const Skills = () => {
       category: 'Web Technologies',
       color: '#ff9f1c',
       items: [
-        { icon: <FaDatabase />, name: 'HTTP, JSON, RESTful API, HTML, CSS', iconColor: '#00758F' },
+        { icon: <FaDatabase />, name: 'HTTP, SSL/TLS, JSON, RESTful API, HTML, CSS', iconColor: '#00758F' },
         { icon: <SiPostman />, name: 'Postman', iconColor: '#FF6C37' },
         { icon: <FaNodeJs />, name: 'Node.js', iconColor: '#68A063' },
         { icon: <FaReact />, name: 'React', iconColor: '#61DAFB' },
