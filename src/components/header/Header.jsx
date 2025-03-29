@@ -27,7 +27,7 @@ const Header = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <a href="#projects" className="nav-link">
+                <a href="#projects" className="nav-link"> 
                   <FaProjectDiagram className="nav-icon" />
                   <span className="nav-text">Projects</span>
                 </a>
