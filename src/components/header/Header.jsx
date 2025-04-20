@@ -1,7 +1,10 @@
+import { useNavigate } from "react-router-dom";
 import "./Header.css";
-import { FaHome, FaUser, FaTools, FaProjectDiagram, FaEnvelope } from "react-icons/fa";
+import { FaHome, FaUser, FaTools, FaProjectDiagram, FaEnvelope, FaLaptopCode } from "react-icons/fa";
 
 const Header = () => {
+  const navigate = useNavigate();
+
   return (
     <header className="header">
       <div className="container">
@@ -18,6 +21,12 @@ const Header = () => {
                 <a href="#about" className="nav-link">
                   <FaUser className="nav-icon" />
                   <span className="nav-text">About</span>
+                </a>
+              </li>
+              <li className="nav-item">
+                <a href="#services" className="nav-link">
+                  <FaLaptopCode onClick={navigate("/services")} className="nav-icon" />
+                  <span className="nav-text">Services</span>
                 </a>
               </li>
               <li className="nav-item">

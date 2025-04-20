@@ -1,21 +1,14 @@
-import About from "./components/about/About"
-import Contact from "./components/contact/Contact"
-import DownloadCV from "./components/downloads/DownloadCV"
-import Header from "./components/header/Header"
-import Projects from "./components/projects/Projects"
-import Skills from "./components/skills/Skills"
+import { Route, Routes } from "react-router-dom"
+import Home from "./components/home/Home.jsx"
+import ServicesPage from "./components/service/ServicePage.jsx"
 
 function App() {
 
   return (
-    <div>
-      <Header />
-      <About />
-      <Skills />
-      <Projects />
-      <DownloadCV/>
-      <Contact />
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/services" element={<ServicesPage />} />
+    </Routes>
   )
 }
 

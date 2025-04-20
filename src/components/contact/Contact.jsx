@@ -2,28 +2,28 @@ import "./Contact.css";
 import { FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
-const Contact = () => {
-  const contacts = [
-    {
-      id: 1,
-      icon: <FaEnvelope />,
-      link: 'mailto:gor1990.mkhitatryan@gmail.com',
-      color: '#D44638', 
-    },
-    {
-      id: 2,
-      icon: <FaLinkedin />,
-      link: 'https://www.linkedin.com/in/gor-mk',
-      color: '#0077B5',
-    },
-    {
-      id: 3,
-      icon: <FaGithub />,
-      link: 'https://github.com/mypy125',
-      color: '#333', 
-    },
-  ];
+const contacts = [
+  {
+    id: 1,
+    icon: <FaEnvelope />,
+    link: 'mailto:gor1990.mkhitatryan@gmail.com',
+    color: '#D44638', 
+  },
+  {
+    id: 2,
+    icon: <FaLinkedin />,
+    link: 'https://www.linkedin.com/in/gor-mk',
+    color: '#0077B5',
+  },
+  {
+    id: 3,
+    icon: <FaGithub />,
+    link: 'https://github.com/mypy125',
+    color: '#333', 
+  },
+];
 
+const Contact = () => {
   return (
     <section id="contact" className="section">
       <div className="contact-icons">

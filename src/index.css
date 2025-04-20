@@ -213,3 +213,22 @@ main {
   letter-spacing: 1px;
   border-radius: 10px;  
 }
+
+.service-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.service-text {
+  flex: 1;
+}
+
+.service-icon {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  min-width: 40px;
+  margin-top: 5px;
+}
