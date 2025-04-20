@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import "./Header.css";
-import { FaHome, FaUser, FaTools, FaProjectDiagram, FaEnvelope, FaLaptopCode } from "react-icons/fa";
+import { FaLaptopCode } from "react-icons/fa";
 
 const Header = () => {
   const navigate = useNavigate();
@@ -11,7 +11,7 @@ const Header = () => {
         <div className="header-wrapper">
           <nav className="nav">
             <ul className="nav-menu">
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <a href="#home" className="nav-link">
                   <FaHome className="nav-icon" />
                   <span className="nav-text">Home</span>
@@ -22,14 +22,14 @@ const Header = () => {
                   <FaUser className="nav-icon" />
                   <span className="nav-text">About</span>
                 </a>
-              </li>
+              </li> */}
               <li className="nav-item">
                 <a href="#services" className="nav-link">
                   <FaLaptopCode onClick={navigate("/services")} className="nav-icon" />
                   <span className="nav-text">Services</span>
                 </a>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <a href="#skills" className="nav-link">
                   <FaTools className="nav-icon" />
                   <span className="nav-text">Skills</span>
@@ -46,7 +46,7 @@ const Header = () => {
                   <FaEnvelope className="nav-icon" />
                   <span className="nav-text">Contact</span>
                 </a>
-              </li>
+              </li> */}
             </ul>
           </nav>
         </div>
