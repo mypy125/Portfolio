@@ -179,7 +179,7 @@ export default function ForRecruiters() {
         </motion.div>
       ))}
 
-      <button type="submit" className="submit-button">Сохранить</button>
+      <button type="submit" className="submit-button">Send</button>
     </form>
   );
 }
