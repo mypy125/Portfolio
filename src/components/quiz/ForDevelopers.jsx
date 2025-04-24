@@ -1,0 +1,221 @@
+import { useState } from "react";
+import { motion } from "framer-motion";
+import "./SurveyForm.css"; 
+import {
+  backendFrameworks,
+  projectValues,
+  javaLevels,
+  workPreferences,
+  devGrowth,
+} from "../../data/quizData.js";
+
+export default function ForDevelopers() {
+  const [formData, setFormData] = useState({
+    stack: "",
+    backendFramework: "",
+    projectPriority: "",
+    javaLevel: "",
+    workStyle: "",
+    learning: "",
+    growthStyle: "",
+  });
+
+  const totalFields = 7;
+  const filledFields = Object.values(formData).filter(Boolean).length;
+  const progress = Math.round((filledFields / totalFields) * 100);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const fadeIn = {
+    hidden: { opacity: 0, y: 20 },
+    visible: (i) => ({
+      opacity: 1,
+      y: 0,
+      transition: { delay: i * 0.1 },
+    }),
+  };
+
+  const fields = [
+    {
+      label: "1. What stack do you use most often?",
+      content: (
+        <input
+          type="text"
+          name="stack"
+          value={formData.stack}
+          onChange={handleChange}
+          className="form-input"
+          placeholder="Java, Kotlin, JavaScript, Python, Go..."
+          required
+        />
+      ),
+    },
+    {
+      label: "2. What is your favorite backend framework?",
+      content: (
+        <div className="radio-group">
+          {backendFrameworks.map((option) => (
+            <label
+              key={option}
+              className={`radio-label ${formData.backendFramework === option ? "selected" : ""}`}
+            >
+              <input
+                type="radio"
+                name="backendFramework"
+                value={option}
+                checked={formData.backendFramework === option}
+                onChange={handleChange}
+                className="radio-input"
+              />
+              {option}
+              {formData.backendFramework === option && <span className="selected-icon">✅</span>}
+            </label>
+          ))}
+        </div>
+      ),
+    },
+    {
+      label: "3. What is more important to you in the project?",
+      content: (
+        <div className="radio-group">
+          {projectValues.map((option) => (
+            <label
+              key={option}
+              className={`radio-label ${formData.projectPriority === option ? "selected" : ""}`}
+            >
+              <input
+                type="radio"
+                name="projectPriority"
+                value={option}
+                checked={formData.projectPriority === option}
+                onChange={handleChange}
+                className="radio-input"
+              />
+              {option}
+              {formData.projectPriority === option && <span className="selected-icon">✅</span>}
+            </label>
+          ))}
+        </div>
+      ),
+    },
+    {
+      label: "4. What is your level of experience in Java?",
+      content: (
+        <div className="radio-group">
+          {javaLevels.map((level) => (
+            <label
+              key={level}
+              className={`radio-label ${formData.javaLevel === level ? "selected" : ""}`}
+            >
+              <input
+                type="radio"
+                name="javaLevel"
+                value={level}
+                checked={formData.javaLevel === level}
+                onChange={handleChange}
+                className="radio-input"
+              />
+              {level}
+              {formData.javaLevel === level && <span className="selected-icon">✅</span>}
+            </label>
+          ))}
+        </div>
+      ),
+    },
+    {
+      label: "5. Remote work, hybrid or office?",
+      content: (
+        <div className="radio-group">
+          {workPreferences.map((option) => (
+            <label
+              key={option}
+              className={`radio-label ${formData.workStyle === option ? "selected" : ""}`}
+            >
+              <input
+                type="radio"
+                name="workStyle"
+                value={option}
+                checked={formData.workStyle === option}
+                onChange={handleChange}
+                className="radio-input"
+              />
+              {option}
+              {formData.workStyle === option && <span className="selected-icon">✅</span>}
+            </label>
+          ))}
+        </div>
+      ),
+    },
+    {
+      label: "6. What are you studying now?",
+      content: (
+        <input
+          type="text"
+          name="learning"
+          value={formData.learning}
+          onChange={handleChange}
+          className="form-input"
+          placeholder="Languages, libraries, DevOps, AI..."
+        />
+      ),
+    },
+    {
+      label: "7. How do you prefer to develop?",
+      content: (
+        <div className="radio-group">
+          {devGrowth.map((option) => (
+            <label
+              key={option}
+              className={`radio-label ${formData.growthStyle === option ? "selected" : ""}`}
+            >
+              <input
+                type="radio"
+                name="growthStyle"
+                value={option}
+                checked={formData.growthStyle === option}
+                onChange={handleChange}
+                className="radio-input"
+              />
+              {option}
+              {formData.growthStyle === option && <span className="selected-icon">✅</span>}
+            </label>
+          ))}
+        </div>
+      ),
+    },
+  ];
+
+  return (
+    <form onSubmit={(e) => {
+      e.preventDefault();
+      console.log("Developer's responses:", formData);
+      alert("Thank you for participating in the survey! 🚀");
+    }} className="dev-form">
+      <h1 className="form-title">🧠 Survey for developers</h1>
+
+      <div className="progress-bar-wrapper">
+        <div className="progress-bar" style={{ width: `${progress}%` }} />
+        <span className="progress-text">{progress}% filled</span>
+      </div>
+
+      {fields.map((field, i) => (
+        <motion.div
+          className="form-group"
+          key={i}
+          custom={i}
+          variants={fadeIn}
+          initial="hidden"
+          animate="visible"
+        >
+          <label className="form-label">{field.label}</label>
+          {field.content}
+        </motion.div>
+      ))}
+
+      <button type="submit" className="submit-button">Send</button>
+    </form>
+  );
+}
