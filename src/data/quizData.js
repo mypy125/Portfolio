@@ -1,3 +1,4 @@
+//#######################DEVELOPER_QUIZ_DATA####################################
 export const backendFrameworks = [
   { label: "Spring Boot", value: "Spring Boot", icon: "🌱" },
   { label: "Micronaut", value: "Micronaut", icon: "🌀" },
@@ -37,6 +38,7 @@ export const devGrowth = [
 ];
 
 
+//#######################RECRUTER_QUIZ_DATA####################################
 export const hiringFocusOptions = [
   { label: "👨‍💻 Backend Masters", value: "Backend" },
   { label: "🎨 Frontend wizard", value: "Frontend" },

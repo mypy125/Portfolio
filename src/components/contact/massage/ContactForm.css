@@ -24,6 +24,12 @@
   font-weight: 500;
 }
 
+.form-group label[for="name"],
+.form-group label[for="email"],
+.form-group label[for="message"] {
+  color: #c5c5c5;
+}
+
 .form-group input,
 .form-group textarea {
   width: 100%;

@@ -1,5 +1,5 @@
 .dark-section {
-  background-color: #1e1e1e;
+  background-color: var(--card-bg);
   color: #f0f0f0;
   padding: 3rem 2rem;
   border-radius: 1rem;
