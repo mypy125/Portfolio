@@ -57,21 +57,22 @@ export default function ForDevelopers() {
       label: "2. What is your favorite backend framework?",
       content: (
         <div className="radio-group">
-          {backendFrameworks.map((option) => (
+          {backendFrameworks.map(({ label, value, icon }) => (
             <label
-              key={option}
-              className={`radio-label ${formData.backendFramework === option ? "selected" : ""}`}
+              key={value}
+              className={`radio-label ${formData.backendFramework === value ? "selected" : ""}`}
             >
               <input
                 type="radio"
                 name="backendFramework"
-                value={option}
-                checked={formData.backendFramework === option}
+                value={value}
+                checked={formData.backendFramework === value}
                 onChange={handleChange}
                 className="radio-input"
               />
-              {option}
-              {formData.backendFramework === option && <span className="selected-icon">✅</span>}
+              {/* {value} */}
+              <span className="icon">{icon}</span> {label}
+              {formData.backendFramework === value && <span className="selected-icon">✅</span>}
             </label>
           ))}
         </div>
@@ -81,21 +82,22 @@ export default function ForDevelopers() {
       label: "3. What is more important to you in the project?",
       content: (
         <div className="radio-group">
-          {projectValues.map((option) => (
+          {projectValues.map(({ label, value, icon }) => (
             <label
-              key={option}
-              className={`radio-label ${formData.projectPriority === option ? "selected" : ""}`}
+              key={value}
+              className={`radio-label ${formData.projectPriority === value ? "selected" : ""}`}
             >
               <input
                 type="radio"
                 name="projectPriority"
-                value={option}
-                checked={formData.projectPriority === option}
+                value={value}
+                checked={formData.projectPriority === value}
                 onChange={handleChange}
                 className="radio-input"
               />
-              {option}
-              {formData.projectPriority === option && <span className="selected-icon">✅</span>}
+              {/* {value} */}
+              <span className="icon">{icon}</span> {label}
+              {formData.projectPriority === value && <span className="selected-icon">✅</span>}
             </label>
           ))}
         </div>
@@ -105,21 +107,22 @@ export default function ForDevelopers() {
       label: "4. What is your level of experience in Java?",
       content: (
         <div className="radio-group">
-          {javaLevels.map((level) => (
+          {javaLevels.map(({ label, value, icon }) => (
             <label
-              key={level}
-              className={`radio-label ${formData.javaLevel === level ? "selected" : ""}`}
+              key={value}
+              className={`radio-label ${formData.javaLevel === value ? "selected" : ""}`}
             >
               <input
                 type="radio"
                 name="javaLevel"
-                value={level}
-                checked={formData.javaLevel === level}
+                value={value}
+                checked={formData.javaLevel === value}
                 onChange={handleChange}
                 className="radio-input"
               />
-              {level}
-              {formData.javaLevel === level && <span className="selected-icon">✅</span>}
+              {/* {value} */}
+              <span className="icon">{icon}</span> {label}
+              {formData.javaLevel === value && <span className="selected-icon">✅</span>}
             </label>
           ))}
         </div>
@@ -129,21 +132,22 @@ export default function ForDevelopers() {
       label: "5. Remote work, hybrid or office?",
       content: (
         <div className="radio-group">
-          {workPreferences.map((option) => (
+          {workPreferences.map(({ label, value, icon }) => (
             <label
-              key={option}
-              className={`radio-label ${formData.workStyle === option ? "selected" : ""}`}
+              key={value}
+              className={`radio-label ${formData.workStyle === value ? "selected" : ""}`}
             >
               <input
                 type="radio"
                 name="workStyle"
-                value={option}
-                checked={formData.workStyle === option}
+                value={value}
+                checked={formData.workStyle === value}
                 onChange={handleChange}
                 className="radio-input"
               />
-              {option}
-              {formData.workStyle === option && <span className="selected-icon">✅</span>}
+              {/* {value} */}
+              <span className="icon">{icon}</span> {label}
+              {formData.workStyle === value && <span className="selected-icon">✅</span>}
             </label>
           ))}
         </div>
@@ -166,21 +170,22 @@ export default function ForDevelopers() {
       label: "7. How do you prefer to develop?",
       content: (
         <div className="radio-group">
-          {devGrowth.map((option) => (
+          {devGrowth.map(({ label, value, icon }) => (
             <label
-              key={option}
-              className={`radio-label ${formData.growthStyle === option ? "selected" : ""}`}
+              key={value}
+              className={`radio-label ${formData.growthStyle === value ? "selected" : ""}`}
             >
               <input
                 type="radio"
                 name="growthStyle"
-                value={option}
-                checked={formData.growthStyle === option}
+                value={value}
+                checked={formData.growthStyle === value}
                 onChange={handleChange}
                 className="radio-input"
               />
-              {option}
-              {formData.growthStyle === option && <span className="selected-icon">✅</span>}
+              {/* {value} */}
+              <span className="icon">{icon}</span> {label}
+              {formData.growthStyle === value && <span className="selected-icon">✅</span>}
             </label>
           ))}
         </div>
