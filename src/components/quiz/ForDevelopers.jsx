@@ -8,6 +8,7 @@ import {
   workPreferences,
   devGrowth,
 } from "../../data/quizData.js";
+import { SurveyService } from "../../service/developerService.js";
 
 export default function ForDevelopers() {
   const [formData, setFormData] = useState({
@@ -20,6 +21,10 @@ export default function ForDevelopers() {
     growthStyle: "",
   });
 
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
+  const [success, setSuccess] = useState(false);
+
   const totalFields = 7;
   const filledFields = Object.values(formData).filter(Boolean).length;
   const progress = Math.round((filledFields / totalFields) * 100);
@@ -27,6 +32,36 @@ export default function ForDevelopers() {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    
+    if (filledFields < totalFields) {
+      setError("Please fill all fields");
+      return;
+    }
+  
+    setLoading(true);
+    
+    const result = await SurveyService.saveDeveloperSurvey(formData);
+    
+    setLoading(false);
+  
+    if (result.success) {
+      setSuccess(true);
+      setFormData({
+        stack: "",
+        backendFramework: "",
+        projectPriority: "",
+        javaLevel: "",
+        workStyle: "",
+        learning: "",
+        growthStyle: ""
+      });
+    } else {
+      setError(result.error);
+    }
   };
 
   const fadeIn = {
@@ -194,11 +229,7 @@ export default function ForDevelopers() {
   ];
 
   return (
-    <form onSubmit={(e) => {
-      e.preventDefault();
-      console.log("Developer's responses:", formData);
-      alert("Thank you for participating in the survey! 🚀");
-    }} className="dev-form">
+    <form onSubmit={handleSubmit} className="dev-form">
       <h1 className="form-title">🧠 Survey for developers</h1>
 
       <div className="progress-bar-wrapper">
@@ -219,8 +250,29 @@ export default function ForDevelopers() {
           {field.content}
         </motion.div>
       ))}
+       {error && (
+        <div className="error-message">
+          {error}
+        </div>
+      )}
 
-      <button type="submit" className="submit-button">Send</button>
+      {success && (
+        <div className="success-message">
+          Thank you! We hope you find the perfect developer 🚀
+        </div>
+      )}
+      <button type="submit"
+       disabled={loading}
+        className="submit-button">
+          {loading ? (
+          <span className="button-loading">
+            <span className="spinner"></span>
+            Sending...
+          </span>
+        ) : (
+          "Send"
+        )}
+        </button>
     </form>
   );
 }

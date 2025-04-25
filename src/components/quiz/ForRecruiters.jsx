@@ -5,6 +5,7 @@ import {
     hiringFocusOptions,
     candidateTraitsOptions
 } from "../../data/quizData.js";
+import { RecruiterService } from "../../service/recruiterService.js";
 
 
 export default function ForRecruiters() {
@@ -17,6 +18,10 @@ export default function ForRecruiters() {
     favoriteStack: "",
     messageToDevs: "",
   });
+
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
+  const [success, setSuccess] = useState(false);
 
   const totalFields = 7;
   const filledFields = Object.values(formData).filter(
@@ -37,10 +42,39 @@ export default function ForRecruiters() {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Recruiter form submitted:", formData);
-    alert("Thank you! We hope you find the perfect developer 🙌");
+    
+    if (filledFields < totalFields) {
+      setError("Please fill all required fields");
+      return;
+    }
+
+    setLoading(true);
+    setError(null);
+    
+    try {
+      const result = await RecruiterService.saveRecruiterForm(formData);
+      
+      if (result.success) {
+        setSuccess(true);
+        setFormData({
+          name: "",
+          company: "",
+          hiringFocus: "",
+          traits: [],
+          dealbreaker: "",
+          favoriteStack: "",
+          messageToDevs: "",
+        });
+      } else {
+        setError(result.error || "Failed to save form");
+      }
+    } catch (err) {
+      setError("An error occurred while saving",err);
+    } finally {
+      setLoading(false);
+    }
   };
 
   const fadeIn = {
@@ -178,8 +212,26 @@ export default function ForRecruiters() {
           {field.content}
         </motion.div>
       ))}
+      {error && (
+        <div className="error-message">
+          {error}
+        </div>
+      )}
 
-      <button type="submit" className="submit-button">Send</button>
+      {success && (
+        <div className="success-message">
+          Thank you! We hope you find the perfect recruiter 🙌
+        </div>
+      )}
+
+      <button 
+      type="submit"
+       disabled={loading}
+       className="submit-button">
+        {
+          loading ? "Submitting..." : "Submit"
+        }
+       </button>
     </form>
   );
 }
