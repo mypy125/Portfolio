@@ -1,13 +1,41 @@
 //#######################DEVELOPER_QUIZ_DATA####################################
-export const backendFrameworks = [
-  { label: "Spring Boot", value: "Spring Boot", icon: "🌱" },
-  { label: "Micronaut", value: "Micronaut", icon: "🌀" },
-  { label: "Quarkus", value: "Quarkus", icon: "⚡️" },
-  { label: "Express", value: "Express", icon: "🚄" },
-  { label: "NestJS", value: "NestJS", icon: "🕸️" },
-  { label: "Django", value: "Django", icon: "🦎" },
-  { label: "FastAPI", value: "FastAPI", icon: "⚡️" },
-];
+export const stackOptions = ["Java", "Kotlin", "JavaScript", "C#", "Go"];
+export const frameworkMap = {
+  Java: [
+    { label: "Spring Boot", value: "Spring Boot", icon: "🌱" },
+    { label: "Micronaut", value: "Micronaut", icon: "🌀" },
+    { label: "Quarkus", value: "Quarkus", icon: "⚡️" },
+    { label: "Express", value: "Express", icon: "🚄" },
+    { label: "NestJS", value: "NestJS", icon: "🕸️" },
+    { label: "Django", value: "Django", icon: "🦎" },
+    { label: "FastAPI", value: "FastAPI", icon: "⚡️" },
+  ],
+  Kotlin: [
+    { label: "Ktor", value: "Ktor", icon: "🎯" },
+    { label: "Spring Boot", value: "Spring Boot", icon: "🌱" },
+    { label: "Micronaut", value: "Micronaut", icon: "🌀" },
+    { label: "Javalin", value: "Javalin", icon: "🌊" },
+  ],
+  JavaScript: [
+    { label: "Express", value: "Express", icon: "🚄" },
+    { label: "NestJS", value: "NestJS", icon: "🕸️" },
+    { label: "Koa", value: "Koa", icon: "🥋" },
+    { label: "Hapi", value: "Hapi", icon: "🎉" },
+    { label: "Sails.js", value: "Sails.js", icon: "⛵" },
+  ],
+  "C#": [
+    { label: ".NET Core", value: ".NET Core", icon: "🔧" },
+    { label: "ASP.NET", value: "ASP.NET", icon: "💻" },
+    { label: "NancyFX", value: "NancyFX", icon: "👩‍⚖️" },
+  ],
+  Go: [
+    { label: "Gin", value: "Gin", icon: "🍸" },
+    { label: "Fiber", value: "Fiber", icon: "🧵" },
+    { label: "Echo", value: "Echo", icon: "📢" },
+    { label: "Beego", value: "Beego", icon: "🐝" },
+  ],
+};
+
 
 export const projectValues = [
   { label: "Clean code", value: "Clean code", icon: "🧼" },

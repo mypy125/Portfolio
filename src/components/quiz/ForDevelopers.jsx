@@ -2,7 +2,8 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import "./SurveyForm.css"; 
 import {
-  backendFrameworks,
+  stackOptions,
+  frameworkMap,
   projectValues,
   javaLevels,
   workPreferences,
@@ -75,24 +76,39 @@ export default function ForDevelopers() {
 
   const fields = [
     {
-      label: "1. What stack do you use most often?",
+      label: (
+        <label htmlFor="stack" className="form-label">
+          1. What stack do you use most often?
+        </label>
+      ),
       content: (
-        <input
-          type="text"
+        <select
           name="stack"
           value={formData.stack}
-          onChange={handleChange}
+          onChange={(e) => {
+            const newStack = e.target.value;
+            setFormData((prev) => ({
+              ...prev,
+              stack: newStack,
+              backendFramework: "",
+            }));
+          }}
           className="form-input"
-          placeholder="Java, Kotlin, JavaScript, Python, Go..."
-          required
-        />
+        >
+        <option value="">🧩Select a stack</option>
+        {stackOptions.map((stack) => (
+        <option key={stack} value={stack}>
+          {stack}
+        </option>
+      ))}
+    </select>
       ),
     },
     {
       label: "2. What is your favorite backend framework?",
       content: (
         <div className="radio-group">
-          {backendFrameworks.map(({ label, value, icon }) => (
+          {(frameworkMap[formData.stack] || []).map(({ label, value, icon }) => (
             <label
               key={value}
               className={`radio-label ${formData.backendFramework === value ? "selected" : ""}`}
@@ -105,7 +121,6 @@ export default function ForDevelopers() {
                 onChange={handleChange}
                 className="radio-input"
               />
-              {/* {value} */}
               <span className="icon">{icon}</span> {label}
               {formData.backendFramework === value && <span className="selected-icon">✅</span>}
             </label>
@@ -130,7 +145,6 @@ export default function ForDevelopers() {
                 onChange={handleChange}
                 className="radio-input"
               />
-              {/* {value} */}
               <span className="icon">{icon}</span> {label}
               {formData.projectPriority === value && <span className="selected-icon">✅</span>}
             </label>
@@ -155,7 +169,6 @@ export default function ForDevelopers() {
                 onChange={handleChange}
                 className="radio-input"
               />
-              {/* {value} */}
               <span className="icon">{icon}</span> {label}
               {formData.javaLevel === value && <span className="selected-icon">✅</span>}
             </label>
@@ -180,7 +193,6 @@ export default function ForDevelopers() {
                 onChange={handleChange}
                 className="radio-input"
               />
-              {/* {value} */}
               <span className="icon">{icon}</span> {label}
               {formData.workStyle === value && <span className="selected-icon">✅</span>}
             </label>
@@ -218,7 +230,6 @@ export default function ForDevelopers() {
                 onChange={handleChange}
                 className="radio-input"
               />
-              {/* {value} */}
               <span className="icon">{icon}</span> {label}
               {formData.growthStyle === value && <span className="selected-icon">✅</span>}
             </label>
