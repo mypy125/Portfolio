@@ -5,10 +5,7 @@ export const frameworkMap = {
     { label: "Spring Boot", value: "Spring Boot", icon: "🌱" },
     { label: "Micronaut", value: "Micronaut", icon: "🌀" },
     { label: "Quarkus", value: "Quarkus", icon: "⚡️" },
-    { label: "Express", value: "Express", icon: "🚄" },
-    { label: "NestJS", value: "NestJS", icon: "🕸️" },
-    { label: "Django", value: "Django", icon: "🦎" },
-    { label: "FastAPI", value: "FastAPI", icon: "⚡️" },
+    { label: "Dropwizard", value: "Dropwizard", icon: "🧙" },
   ],
   Kotlin: [
     { label: "Ktor", value: "Ktor", icon: "🎯" },
