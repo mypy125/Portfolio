@@ -153,7 +153,7 @@ export default function ForDevelopers() {
       ),
     },
     {
-      label: "4. What is your level of experience in Java?",
+      label: "4. What is your level of experience?",
       content: (
         <div className="radio-group">
           {javaLevels.map(({ label, value, icon }) => (
