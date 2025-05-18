@@ -34,11 +34,12 @@ export const skillsData = [
       ],
     },
     {
-      category: 'Web Technologies',
+      category: 'Networks & Web Technologies',
       color: '#ff9f1c',
       items: [
-        { icon: <FaDatabase />, name: 'HTTP, SSL/TLS, JSON, RESTful API, HTML, CSS', iconColor: '#00758F' },
-        { icon: <SiPostman />, name: 'Postman', iconColor: '#FF6C37' },
+        { icon: <FaDatabase />, name: 'TCP/IP, UDP, HTTP, HTTPS, DNS, SSL/TLS, JSON, RESTful API, HTML, CSS', iconColor: '#00758F' },
+        { icon: <FaLinux />, name: 'Linux Networking (iptables, netstat, etc.)', iconColor: '#fbc531' },
+        { icon: <SiPostman />, name: 'Postman Network', iconColor: '#FF6C37' },
         { icon: <FaNodeJs />, name: 'Node.js', iconColor: '#68A063' },
         { icon: <FaReact />, name: 'React', iconColor: '#61DAFB' },
         { icon: <SiRedux />, name: 'Redux', iconColor: '#764ABC' },
