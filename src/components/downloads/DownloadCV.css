@@ -7,7 +7,7 @@
     font-size: 1.5rem;
     font-weight: 700;
     padding: 8px 18px;
-    border: 2px solid #2a9d8f; 
+    border: 2px solid #2a9d8f;
     border-radius: 6px;
     text-decoration: none;
     transition: all 0.3s ease;
@@ -45,6 +45,28 @@ h2 {
     margin-bottom: 25px;
 }
 
+.lang-select {
+    padding: 8px 16px;
+    font-size: 1rem;
+    border: 2px solid #2a9d8f;
+    border-radius: 6px;
+    background-color: transparent;
+    color: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.lang-select:focus {
+    outline: none;
+    border-color: #219c80;
+}
+
+.lang-select option {
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
 @media (max-width: 768px) {
     .download-btn {
         font-size: 1.4rem;
@@ -53,5 +75,9 @@ h2 {
 
     .download-icon {
         font-size: 1.5rem;
+    }
+
+    .lang-select {
+        margin-right: 10px; 
     }
 }
