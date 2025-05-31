@@ -1,23 +1,13 @@
 export const projectsData = [
     {
-      title: "Restaurant Ordering Backend",
+      title: "Restaurant Ordering System",
       description: "Built with Spring Boot & React. Integrated payment systems (Payment Gatwey).",
-      link: "https://github.com/mypy125/Restaurant-backend",
+      link: "https://restaurant-frontend-9jwn.onrender.com/",
     },
     {
-      title: "E-commerce Multivendor Backend",
+      title: "E-commerce Multivendor System",
       description: "An e-commerce platform supporting customers, sellers, and administrators.",
       link: "https://github.com/mypy125/ecommerce-multivendor-backend",
-    },
-    {
-      title: "Restaurant Ordering Frontend",
-      description: "Built with Spring Boot & React. Integrated payment systems (Payment Gatwey).",
-      link: "https://github.com/mypy125/Restaurant.am-frontend",
-    },
-    {
-      title: "E-commerce Multivendor Frontend",
-      description: "An e-commerce platform supporting customers, sellers, and administrators.",
-      link: "https://github.com/mypy125/ecommerce-multivendor-frontend",
     },
     {
       title: "Shop Desktop Application",

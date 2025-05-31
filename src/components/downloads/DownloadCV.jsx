@@ -16,7 +16,7 @@ const DownloadCV = () => {
 
   return (
     <section id="download-cv" className="section">
-      <h2>Download My CV</h2>
+      <h2>Download_My_CV</h2>
 
       <div style={{ display: 'flex', gap: '15px', justifyContent: 'center', alignItems: 'center' }}>
         <select
