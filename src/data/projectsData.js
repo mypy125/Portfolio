@@ -7,7 +7,7 @@ export const projectsData = [
     {
       title: "E-commerce Multivendor System",
       description: "An e-commerce platform supporting customers, sellers, and administrators.",
-      link: "https://github.com/mypy125/ecommerce-multivendor-backend",
+      link: "https://ecommerce-multivendor-frontend.onrender.com",
     },
     {
       title: "Shop Desktop Application",
