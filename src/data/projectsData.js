@@ -12,7 +12,7 @@ export const projectsData = [
     {
       title: "Shop Desktop Application",
       description: "This project is a desktop application for managing products, stock, and stores.",
-      link: "https://github.com/mypy125/shop-desktop/",
+      link: "https://github.com/mypy125/shop-desktop",
     },
     
   ];
