@@ -24,7 +24,7 @@ export const services = [
     icon: "FaServer",
     title: "API Development",
     description: "Designing and implementing secure, well-documented APIs for seamless integration.",
-    image: "https://www.akana.com/sites/default/files/image/2019-06/image-blog-getting-most-api-management-600x400.jpg",
+    image: "https://devby.io/storage/images/11/19/60/46/derived/487334ba2fc1b64aca15ee29aab39967.jpg",
     section: {
       images: [
         "https://res.cloudinary.com/upwork-cloud/image/upload/c_scale,w_1000/v1708020518/catalog/1518080312239206400/a2gtqkykvwqpujh5fpsu.webp",
