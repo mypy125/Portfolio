@@ -76,7 +76,7 @@ export const skillsData = [
       category: 'Principles & Architectural Code & Patterns Development',
       color: '#2a9d8f',
       items: [
-        { icon: <GiCircuitry />, name: 'SOLID, OOP, AOP, DDD, DAO, MVC, MVP, MVVM, GATEWAY, PROXY, etc.', iconColor: '#00FF00' },
+        { icon: <GiCircuitry />, name: 'ACID, OOP, SOLID, AOP, DDD, MVC, MVP, MVVM, DAO, GATEWAY, PROXY', iconColor: '#00FF00' },
       ],
     },
     {
